@@ -33,10 +33,6 @@ The `|` element is used in regular expressions to define the "or" operator. It c
 
 Character classes are parts of our regular expression that provide us with character type information. Our character classes are contained inside brackets [] in this example. We have two character classes in our example: `[a-f0-9]` and `[a-f0-9]`, and they both look for the same values. Within these character classes, we will analyze the searches that the characters are conducting. A to F looks for letters A to F, while 0 to 9 looks for numbers 0 to 9.
 
-### Flags
-
-### Grouping and Capturing
-
 ### Bracket Expressions
 
 Bracket Expressions correspond to any character enclosed in square bracket. For instance, no, nO, No, and NO match [nN] [oO]. The word "grey" is spelled "gra[ae]y," which is the same as both gray and grey.
@@ -44,12 +40,7 @@ Bracket Expressions correspond to any character enclosed in square bracket. For 
 ### Greedy and Lazy Match
 
 An element is matched as many times as possible in a greedy match. In contrast, a lazy match makes an effort to match an element as infrequently as feasible. The lazy quantifier in our example is denoted by? The reason this is called a lazy quantifier is that it makes the regular expression engine match the fewest possible occurrences. All we need to do is add a? to this indolent match to make it greedy.
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
-I'm Bryce Hadl and I'm currently a student at KU studying Software Development my Github link for this repository is:
+I'm Bryce Hadl and I'm currently a student at KU studying Software Development my Github link for this repository is: `https://github.com/brycehadl/Regex-Tutorial/tree/main`

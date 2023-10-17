@@ -8,38 +8,39 @@ I'll go over and dissect the parts of a regular expression that match hex values
 
 ## Table of Contents
 
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Your Task](#your-task)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 - [Author](#author)
 
-## Regex Components
+## Your Task
 
-### Anchors
+Developers write code, but they also *write about code*. Take a moment to search the web for tutorials about any of the subjects you’ve learned so far in this course. You’re likely to find thousands of tutorials written by developers of all skill levels, including junior developers&mdash;like yourself!
 
-Anchors don't remotely fit any character. Rather, they align a place prior to, following, or in between characters. The regex match can be "anchored" at a certain point using them. The caret ~ corresponds to the string's initial character's position. Using ^a to match an ABC to a. Since the b cannot be matched by ^ immediately after the string's start, \b does not match any of the letters in the alphabet. The innards of the regex engine can be shown below. Likewise, $ matches immediately following the string's final character. In the ABC, c$ and c match, but a$ does not match at all.
+Your assignment this week is to create a tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does. You'll use the template provided in the starter code to create your walkthrough.
 
-### Quantifiers
+## User Story
 
-The number of characters expected is expressed using quantifiers. The number of occurrences of a character, group, or character class that must exist in the input for a match to be found is indicated by quantifiers. Quantifiers match as many characters as they can by default because they are greedy. Regular expressions that contain the characters ",+,?,{}" are regarded as quantifiers. To match 0 or 1 times, the expression is indicated by the? As stated in the summary above, in order to differentiate between the two types of formats, we will use the or operator. The hex triplet format {6} and the shorthand hex format {3} in our Hex Value regular expression mean that the component preceding these quantifiers should have a length of 6 for {6} and 3 for {3}. 
+```md
+AS A web development student
+I WANT a tutorial explaining a specific regex
+SO THAT I can understand the search pattern the regex defines
+```
 
-### OR Operator
-The `|` element is used in regular expressions to define the "or" operator. It could be any of the two parts that we are using the `|` to separate, according to the `or` operator. We have `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` for our hex value regular expression. Observe how the or operator divides these two parts. This implies that there are two possible values for our hex value: six characters `[a-f0-9]{6}` or three characters `[a-f0-9]{3}`.
+## Acceptance Criteria
 
-### Character Classes
+```md
+GIVEN a regex tutorial
+WHEN I open the tutorial
+THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
+WHEN I click on the links in the table of contents
+THEN I am taken to the corresponding sections of the tutorial
+WHEN I read through each section of the tutorial
+THEN I find a detailed explanation of what a specific component of the regex does
+WHEN I reach the end of the tutorial
+THEN I find a section about the author and a link to the author’s GitHub profile
+```
 
-Character classes are parts of our regular expression that provide us with character type information. Our character classes are contained inside brackets [] in this example. We have two character classes in our example: `[a-f0-9]` and `[a-f0-9]`, and they both look for the same values. Within these character classes, we will analyze the searches that the characters are conducting. A to F looks for letters A to F, while 0 to 9 looks for numbers 0 to 9.
-
-### Bracket Expressions
-
-Bracket Expressions correspond to any character enclosed in square bracket. For instance, no, nO, No, and NO match [nN] [oO]. The word "grey" is spelled "gra[ae]y," which is the same as both gray and grey.
-
-### Greedy and Lazy Match
-
-An element is matched as many times as possible in a greedy match. In contrast, a lazy match makes an effort to match an element as infrequently as feasible. The lazy quantifier in our example is denoted by? The reason this is called a lazy quantifier is that it makes the regular expression engine match the fewest possible occurrences. All we need to do is add a? to this indolent match to make it greedy.
 
 ## Author
 

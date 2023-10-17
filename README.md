@@ -1,7 +1,5 @@
 # Regex-Tutorial For Hex Value
 
-Character combinations in strings can be matched using regular expressions, which are patterns. "Not" is indicated by the metacharacter ^ in a regular expression. Hence, "^a" denotes "do not match lowercase a," whereas "a" signifies "match lowercase a."
-
 ## Summary
 
 I'll go over and dissect the parts of a regular expression that match hex values. A computer may be accurately informed about any particular color using the hexadecimal coding method, which guarantees precision and consistency in electronic displays. A six-digit number that comes before the # symbol in hexadecimal represents a color that can be utilized in a computer program or webpage.    Example /^#?([a-f0-9]{6}|[a-f0-9]{3})$/

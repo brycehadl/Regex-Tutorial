@@ -43,5 +43,5 @@ An element is matched as many times as possible in a greedy match. In contrast, 
 
 ## Author
 
-I'm Bryce Hadl and I'm currently a student at KU studying Software Development my Github link for this repository is: [click here to follow my work](https://github.com/brycehadl/Regex-Tutorial/tree/main)
+I'm Bryce Hadl and I'm currently a student at KU studying Software Development my Github link for this repository is: [click here to follow my work](https://github.com/brycehadl)
 
